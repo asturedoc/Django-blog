@@ -1,0 +1,15 @@
+{% extends "posts/base.html" %}
+{% load crispy_forms_tags %}
+{% block title %} blog -register {% endblock %}
+
+{% block content%}
+   <div class="content-section ">
+       <h3 >You have been logged out</h3>
+           <div class="border-top pt-3">
+               <small class="text-muted">
+                   <a href="{% url 'login' %}">Login as</a>
+               </small>
+           </div>
+   </div> 
+
+{% endblock%}
